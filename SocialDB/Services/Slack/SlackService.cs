@@ -29,10 +29,7 @@ namespace SocialDB.Services.Slack
 
         private async Task<string> CreateChannel(string channelName)
         {
-            /*
-             * https://slack.com/api/channels.create?token=xoxp-316896464659-317845698950-316344801840-697ae5995e361fe3241eed85961350f5&name=TestChannel3&pretty=1
-             */
-
+            
             string requestUri = $"https://slack.com/api/channels.create?token={_token}&name={channelName}&pretty=1";
 
             string result = await _httpClientService.GetAysnc(requestUri);
@@ -49,10 +46,7 @@ namespace SocialDB.Services.Slack
 
         private async Task<List<Message>> GetChannelMessage(string channelId)
         {
-            /*
-             * https://slack.com/api/channels.history?token=xoxp-316896464659-317845698950-316344801840-697ae5995e361fe3241eed85961350f5&channel=C9BQVLMD4&count=10000&pretty=1
-             */
-
+           
             string requestUri = $"https://slack.com/api/channels.history?token={_token}&channel={channelId}&count=10000&pretty=1";
 
             string result = await _httpClientService.GetAysnc(requestUri);
@@ -69,7 +63,6 @@ namespace SocialDB.Services.Slack
 
         private async Task<List<Channel>> GetAllChannels()
         {
-            //https://slack.com/api/channels.list?token=xoxp-316896464659-317845698950-316344801840-697ae5995e361fe3241eed85961350f5&pretty=1
 
             string requestUri = $"https://slack.com/api/channels.list?token={_token}&pretty=1";
 
@@ -87,7 +80,6 @@ namespace SocialDB.Services.Slack
 
         private async Task DeleteMessage(string messageId, string channelId)
         {
-            //https://slack.com/api/chat.delete?token=xoxp-316896464659-317845698950-316344801840-697ae5995e361fe3241eed85961350f5&channel=C9AD5LYSD&ts=1519495737.000028&pretty=1
 
             string requestUri = $"https://slack.com/api/chat.delete?token={_token}&channel={channelId}&ts={messageId}&pretty=1";
 
@@ -96,7 +88,6 @@ namespace SocialDB.Services.Slack
 
         private async Task UpdateMessage(string message, string messageId, string channelId)
         {
-            //https://slack.com/api/chat.update?token=xoxp-316896464659-317845698950-316344801840-697ae5995e361fe3241eed85961350f5&channel=C9AD5LYSD&text=Hello%20again%202...&ts=1519495969.000100&pretty=1
 
             string requestUri = $"https://slack.com/api/chat.update?token={_token}&channel={channelId}&text={message}&ts={messageId}&pretty=1";
 
@@ -106,7 +97,6 @@ namespace SocialDB.Services.Slack
 
         private async Task<Message> PostMessage(string message, string channelId)
         {
-            //https://slack.com/api/chat.postMessage?token=xoxp-316896464659-317845698950-316344801840-697ae5995e361fe3241eed85961350f5&channel=C9AD5LYSD&text=This%20Is%20Posty&pretty=1
             message = HttpUtility.UrlEncode(message);
             string requestUri = $"https://slack.com/api/chat.postMessage?token={_token}&channel={channelId}&text={message}&pretty=1";
 

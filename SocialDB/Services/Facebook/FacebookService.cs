@@ -10,7 +10,6 @@ namespace SocialDB.Services.Facebook
 {
     internal class FacebookService
     {
-        //private const string AccessToken = "EAACHKSOAqz8BAO0ZACSlGa8ZAtsfm1rq5IDQZCTDIK0ZCePz4cVaEN8ZCaxbHKC9SZBKgZCgKIznwgjxWcqjqOswuKtWeDWp3pKclxOpq3PuYeBuglgUH22NuUfx2mC98jjjhSRHoQN3BL5EmHgMRljxqbgJDZCnJIgZD";
 
         private readonly string _accessToken;
 

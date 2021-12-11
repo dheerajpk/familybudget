@@ -15,7 +15,7 @@ namespace FamilyBudget.UnitTest.SocialDB
     {
         private Connection _connection;
 
-        private const string AccessToken = "xoxp-316896464659-317845698950-316344801840-697ae5995e361fe3241eed85961350f5";
+        private const string AccessToken = "<GET API ACCESS TOKEN>";
 
         [TestInitialize]
         public void Setup()
