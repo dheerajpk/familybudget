@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15px"
+    android:paddingBottom="15px">
+    <ImageButton
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:id="@+id/newExpenseAddButton"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add_box_white_24dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHeader"
+        android:text="@string/income_hint"
+        android:textAlignment="center"
+        android:padding="5px"
+        android:textColor="@color/foreground_material_dark"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/newExpenseAddButton"
+        android:fontFamily="@string/abc_font_family_body_2_material" />
+</RelativeLayout>

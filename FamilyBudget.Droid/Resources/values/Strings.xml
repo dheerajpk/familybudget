@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name"><![CDATA[Family Budget]]></string>
+
+  <string name="expense_fixed_hint"><![CDATA[FIXED EXPENSE  \nLoan EMI,Monthly Bills,House Rents etc]]></string>
+  <string name="expense_variable_hint"><![CDATA[VARIABLE EXPENSE  \nTravel Tickets,Resturant Bills,Movie Tickets etc]]></string>
+  <string name="income_hint"><![CDATA[INCOME \nSalary,Income from small business etc]]></string>
+</resources>

@@ -1,0 +1,15 @@
+{
+  "schema": "Family",
+  "data": {
+    "family": "FamilyName",
+    "familyCode": "AZSWED89",
+    "familyMembers": [
+      {
+        "memberId": "DheerajPKASWSAS",
+        "memberName": "Dheeraj PK",
+        "isParent": "true"
+      }
+    ]
+  }
+}
+

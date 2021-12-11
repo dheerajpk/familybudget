@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        android:visibility="invisible" />
+    <LinearLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/NewFamilyLayout">
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Family Name"
+            android:id="@+id/familyEditText"
+            android:inputType="textCapCharacters" />
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Name"
+            android:id="@+id/memberNameEditText" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/doneButton"
+            android:text="Done"
+            android:tag="New" />
+    </LinearLayout>
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SetupFamilyRelativeLayout">
+        <TextView
+            android:text="Would you like to start with ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelTextView"
+            android:paddingStart="10px" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newButton"
+            android:text="Setup New Family"
+            android:layout_below="@id/labelTextView" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/joinButton"
+            android:text="Join Family"
+            android:layout_below="@id/newButton" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/familCodeRelativeLayout"
+        android:layout_margin="10px">
+        <TextView
+            android:text="Family Code"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewFamilyLabel" />
+        <TextView
+            android:text="DDQHPP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/familyCodeTextView"
+            android:textSize="40dp"
+            android:textColor="@color/ColorVariable"
+            android:gravity="center"
+            android:inputType="textCapCharacters" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inviteButton"
+            android:text="Invite Family" />
+    </LinearLayout>
+    <TextView
+        android:text="Version 1.1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1" />
+</LinearLayout>

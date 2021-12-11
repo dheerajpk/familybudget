@@ -1,0 +1,92 @@
+{
+  "schema": "Categories",
+  "data": {
+    "categories": [
+      {
+        "id": "0857F97A-D78D-4940-B225-BFECBDC010B4",
+        "name": "House Rent",
+        "isIncome": "false"
+      },
+      {
+        "id": "D1F0FEBC-8D7F-49BF-BB00-028AAB30DD66",
+        "name": "Personal Loan EMI",
+        "isIncome": "false"
+      },
+      {
+        "id": "D634491F-68A9-4D6E-9B58-156516CA04C5",
+        "name": "Home Loan EMI",
+        "isIncome": "false"
+      },
+      {
+        "id": "55A3FE4F-BF84-42E1-B1A6-719BE50879D8",
+        "name": "Mobile Bill",
+        "isIncome": "false"
+      },
+      {
+        "id": "88F4D210-16FB-41ED-B430-BE13CFDB69F9",
+        "name": "Telephone Bill",
+        "isIncome": "false"
+      },
+      {
+        "id": "F238F0EA-4C00-4472-B7CD-6DE266295F60",
+        "name": "Gas Bill",
+        "isIncome": "false"
+      },
+      {
+        "id": "7BB8AF77-24A9-444C-BCF7-A16FC08DEA4A",
+        "name": "Electricity Bill",
+        "isIncome": "false"
+      },
+      {
+        "id": "5A9372BC-EECC-4C92-A297-2EBB0C6F6467",
+        "name": "Maid/Housekeeper Salary",
+        "isIncome": "false"
+      },
+      {
+        "id": "D173601C-C904-4437-86F2-E85047B70F1C",
+        "name": "Internet Bill",
+        "isIncome": "false"
+      },
+      {
+        "id": "B0B7F5B5-E193-4EE8-997E-88FF893090C3",
+        "name": "Grocery Bill",
+        "isIncome": "false"
+      },
+      {
+        "id": "A8056C29-D3C9-4B37-86E1-083101B91368",
+        "name": "Cable Bill",
+        "isIncome": "false"
+      },
+      {
+        "id": "B0B7F5B5-E193-4EE8-997E-88FF893090C3",
+        "name": "House/Flat Maintiance Bill",
+        "isIncome": "false"
+      },
+      {
+        "id": "56BA4BDA-10A3-4437-A929-E3CA601895A7",
+        "name": "Others",
+        "isIncome": "false"
+      },
+      {
+        "id": "A77E483B-35CE-42D5-B656-0D2F36A918DA",
+        "name": "Salary",
+        "isIncome": "true"
+      },
+      {
+        "id": "F0FB3EAC-763C-4B95-93E8-76001D8CFFF3",
+        "name": "Insurance Premimum",
+        "isIncome": "false"
+      },
+      {
+        "id": "3C3277AD-795C-4492-B608-2B5A4DB122BA",
+        "name": "Vehicle Insurance Premimum",
+        "isIncome": "false"
+      },
+      {
+        "id": "4A6EBC9A-F708-401C-A410-4E248E7C8ADC",
+        "name": "News Paper Bill",
+        "isIncome": "false"
+      }
+    ]
+  }
+}

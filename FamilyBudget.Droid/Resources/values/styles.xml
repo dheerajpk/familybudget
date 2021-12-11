@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="PrimaryThemes" parent="Theme.AppCompat.Light">
+
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorPrimary">#6F68A0</item>
+    <item name="colorPrimaryDark">#5A5388</item>
+
+  </style>
+
+  <style name="TabLayoutThemes" parent="Widget.Design.TabLayout">
+    <item name="tabIndicatorColor">#FFFFFF</item>
+    <item name="tabIndicatorHeight">2dp</item>
+    <item name="tabSelectedTextColor">#212121</item>
+  </style>
+</resources>

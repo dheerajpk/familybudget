@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="ColorPrimary">#2196F3</color>
+  <color name="ColorPrimaryDark">#1976D2</color>
+
+  <color name="ColorDashBoard">#CCCCCC</color>
+  <color name="ColorIncome">#4EA5D2</color>
+  <color name="ColorFixed">#4976AC</color>
+  <color name="ColorVariable">#5A5388</color>
+
+  <color name="ColorApp">#FCFDEF</color>
+
+  <color name="ColorGray">#F2F2F2</color>
+
+  <color name="ColorWhite">#FFFFFF</color>
+
+  <color name="ColorWhiteV1">#FEFEFE</color>
+
+  <color name="ColorWhiteV2">#ECF0F1</color>
+
+  <color name="ColorWhiteV3">#ECF0F1</color>
+
+</resources>

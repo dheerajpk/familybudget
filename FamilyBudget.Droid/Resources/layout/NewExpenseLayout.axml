@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:padding="10px">
+    <TextView
+        android:text="Date Of Your Expense"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateLabel"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5px" />
+    <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateLabel"
+        android:background="@drawable/style_border_linearlayout"
+        android:padding="10px">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateEditText"
+            android:clickable="true"
+            android:foreground="@color/ColorWhite"
+            android:textColor="@color/ColorWhite" />
+        <ImageButton
+            android:src="@drawable/calendar"
+            android:background="@android:color/transparent"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_marginLeft="10px"
+            android:id="@+id/dateImageButton"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+    <TextView
+        android:text="Expense Category"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateLayout"
+        android:layout_marginTop="15px"
+        android:id="@+id/categoryLabel" />
+    <Spinner
+        android:minWidth="25px"
+        android:minHeight="60px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/categorySpinner"
+        android:layout_below="@id/categoryLabel"
+        android:foreground="@color/ColorWhite"
+        android:background="@drawable/style_border_linearlayout"
+        android:padding="10px" />
+    <TextView
+        android:text="Amount"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categorySpinner"
+        android:layout_marginTop="15px"
+        android:id="@+id/amountLabel" />
+    <EditText xmlns:tools="http://schemas.android.com/tools"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountEditText"
+        android:selectAllOnFocus="true"
+        tools:text="25.00"
+        android:hint="Amount"
+        android:layout_below="@id/amountLabel"
+        android:foreground="@color/ColorWhite"
+        android:textColor="@color/ColorWhite"
+        android:background="@drawable/style_border_linearlayout"
+        android:padding="10px" />
+    <EditText xmlns:tools="http://schemas.android.com/tools"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameEditText"
+        android:hint="Notes"
+        android:layout_below="@id/amountEditText"
+        android:foreground="@android:color/white"
+        android:textColor="@color/ColorWhite"
+        android:background="@drawable/style_border_linearlayout"
+        android:layout_marginTop="20px"
+        android:padding="10px" />
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addButton"
+        android:textAllCaps="false"
+        android:maxWidth="100px"
+        android:layout_marginTop="10px"
+        android:layout_below="@id/nameEditText" />
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelButton"
+        android:textAllCaps="false"
+        android:maxWidth="100px"
+        android:layout_marginTop="10px"
+        android:layout_below="@id/nameEditText"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

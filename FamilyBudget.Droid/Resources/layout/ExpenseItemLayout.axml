@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ColorVariable">
+    <LinearLayout
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:background="@color/foreground_material_dark"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/CatShortLayout">
+        <TextView
+            android:text="PA"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CatShortTextView"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+    <TextView
+        android:text="Personal Loan"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CategoryTextView"
+        android:layout_toRightOf="@id/CatShortLayout"
+        android:paddingLeft="20px"
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="10px"
+        android:textColor="@color/ColorWhiteV1" />
+    <TextView
+        android:text="02-Jan-2018"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DateTextView"
+        android:layout_toRightOf="@id/CatShortLayout"
+        android:layout_below="@id/CategoryTextView"
+        android:paddingLeft="20px"
+        android:layout_marginTop="5px"
+        android:textColor="@color/ColorWhiteV2" />
+    <TextView
+        android:text="1500.00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AmountTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_alignBottom="@id/CatShortLayout"
+        android:paddingEnd="5px"
+        android:paddingTop="4px"
+        android:textColor="@color/ColorWhite" />
+    <TextView
+        android:text="Spent By Vaishna"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SpentByTextView"
+        android:layout_below="@id/DateTextView"
+        android:padding="20px"
+        android:textColor="@color/ColorWhiteV3" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AmountTextView"
+        android:layout_alignParentRight="true"
+        android:id="@+id/deleteimageButton"
+        android:layout_marginTop="5px"
+        android:src="@android:drawable/ic_menu_delete"
+        android:background="@android:color/transparent" />
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/helpRelativeLayout"
+    android:padding="25px"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone">
+    <ImageView
+      android:src="@drawable/arrow"
+      android:layout_width="400px"
+      android:layout_height="200px"
+      android:id="@+id/imageView1"
+      android:layout_marginTop="80px" />
+    <ImageView
+      android:src="@drawable/ic_add_box_white_24dp"
+      android:layout_width="80px"
+      android:layout_height="80px"
+      android:id="@+id/imageView2"
+      android:layout_toRightOf="@id/imageView1"
+      android:background="@color/primary_dark_material_dark" />
+    <TextView
+      android:text="Tap '+' icon to add expenses"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView1"
+      android:textColor="@color/primary_dark_material_dark"
+      android:layout_below="@id/imageView2"
+      android:layout_alignStart="@id/imageView2"
+      android:layout_margin="10px"
+      android:textStyle="italic" />
+  </RelativeLayout>
+
+  <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        android:visibility="gone" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/ColorDashBoard"
+        android:minWidth="25px"
+        android:minHeight="125px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayoutDashBoard">
+        <ImageView
+            android:src="@drawable/balance96"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:id="@+id/imageView1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px" />
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/familyTips"
+            android:paddingStart="10px"
+            android:layout_centerInParent="true"
+            android:textSize="25dp"
+            android:textColor="@color/ColorVariable"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px" />
+    </LinearLayout>
+    <FamilyBudget.Droid.Views.NewExpenseView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@id/relativeLayoutDashBoard"
+        android:id="@+id/newExpenseView" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewExpenses"
+        android:dividerHeight="0.8px"
+        android:layout_below="@id/newExpenseView" />
+ 
+  </RelativeLayout>
